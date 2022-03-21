@@ -72,6 +72,14 @@
     },
     {
       "idiom" : "ipad",
+<<<<<<< HEAD
+=======
+      "scale" : "1x",
+      "size" : "76x76"
+    },
+    {
+      "idiom" : "ipad",
+>>>>>>> d6975c8254075a9831349eefd791db367b3f9909
       "scale" : "2x",
       "size" : "76x76"
     },
