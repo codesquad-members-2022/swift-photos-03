@@ -2,8 +2,7 @@
 //  PhotoAlbumUITestsLaunchTests.swift
 //  PhotoAlbumUITests
 //
-//  Created by 김동준 on 2022/03/21.
-//
+
 
 import XCTest
 

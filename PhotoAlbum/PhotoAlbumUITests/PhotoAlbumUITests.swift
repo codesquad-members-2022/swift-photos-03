@@ -2,8 +2,7 @@
 //  PhotoAlbumUITests.swift
 //  PhotoAlbumUITests
 //
-//  Created by 김동준 on 2022/03/21.
-//
+
 
 import XCTest
 
@@ -27,7 +26,10 @@ class PhotoAlbumUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+<<<<<<< HEAD
+=======
         // Use recording to get started writing UI tests.
+>>>>>>> d6975c8254075a9831349eefd791db367b3f9909
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
