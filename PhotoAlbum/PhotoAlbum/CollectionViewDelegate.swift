@@ -14,23 +14,26 @@ class CollectionViewDelegate: NSObject {
     init(colorFactory: ColorRGBMakeable) {
         self.colorFactory = colorFactory
     }
+    
+    private func randomBackgroundColor() -> UIColor{
+        let r = CGFloat(colorFactory.randomR())
+        let g = CGFloat(colorFactory.randomG())
+        let b = CGFloat(colorFactory.randomB())
+        return UIColor(red: r, green: g, blue: b, alpha: 1)
+    }
 }
 
 extension CollectionViewDelegate: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40
+        let maxCellCount = 40
+        return maxCellCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        let r = CGFloat(colorFactory.randomR())
-        let g = CGFloat(colorFactory.randomG())
-        let b = CGFloat(colorFactory.randomB())
-        
-        cell.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        
+        let cellId = "randomColorCell"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        cell.backgroundColor = randomBackgroundColor()
         return cell
     }
     
