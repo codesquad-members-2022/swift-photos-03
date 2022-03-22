@@ -16,6 +16,8 @@
 		7240385E27E865DE000E29AB /* PhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240385D27E865DE000E29AB /* PhotoAlbumTests.swift */; };
 		7240386827E865DF000E29AB /* PhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240386727E865DF000E29AB /* PhotoAlbumUITests.swift */; };
 		7240386A27E865DF000E29AB /* PhotoAlbumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240386927E865DF000E29AB /* PhotoAlbumUITestsLaunchTests.swift */; };
+		7305DDF327E96A9D0096A087 /* ColorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305DDF227E96A9D0096A087 /* ColorFactory.swift */; };
+		7305DDF527E970090096A087 /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305DDF427E970090096A087 /* CollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7240386327E865DF000E29AB /* PhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7240386727E865DF000E29AB /* PhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		7240386927E865DF000E29AB /* PhotoAlbumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7305DDF227E96A9D0096A087 /* ColorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFactory.swift; sourceTree = "<group>"; };
+		7305DDF427E970090096A087 /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 				7240384627E865DD000E29AB /* AppDelegate.swift */,
 				7240384827E865DD000E29AB /* SceneDelegate.swift */,
 				7240384A27E865DD000E29AB /* ViewController.swift */,
+				7305DDF427E970090096A087 /* CollectionViewDelegate.swift */,
 				7240384C27E865DD000E29AB /* Main.storyboard */,
+				7305DDF227E96A9D0096A087 /* ColorFactory.swift */,
 				7240384F27E865DE000E29AB /* Assets.xcassets */,
 				7240385127E865DE000E29AB /* LaunchScreen.storyboard */,
 				7240385427E865DE000E29AB /* Info.plist */,
@@ -260,6 +266,8 @@
 			files = (
 				7240384B27E865DD000E29AB /* ViewController.swift in Sources */,
 				7240384727E865DD000E29AB /* AppDelegate.swift in Sources */,
+				7305DDF527E970090096A087 /* CollectionViewDelegate.swift in Sources */,
+				7305DDF327E96A9D0096A087 /* ColorFactory.swift in Sources */,
 				7240384927E865DD000E29AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

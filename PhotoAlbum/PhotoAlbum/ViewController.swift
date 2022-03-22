@@ -9,9 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    private let collectionViewDelegate = CollectionViewDelegate(colorFactory: ColorFactory())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        collectionView.delegate = collectionViewDelegate
+        collectionView.dataSource = collectionViewDelegate
     }
 
 
