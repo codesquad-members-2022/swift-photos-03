@@ -38,8 +38,9 @@ extension CollectionViewDelegate: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return .init(width: 80, height: 80)
+        let defaultWidth = 80
+        let defaultHeight = 80
+        return .init(width: defaultWidth, height: defaultHeight)
     }
     
 }
