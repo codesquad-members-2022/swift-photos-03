@@ -9,11 +9,14 @@ import Foundation
 import UIKit
 
 class NavigationController: UINavigationController{
+    private lazy var viewController = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.topItem?.title = "photos"
-        
+        guard let viewController = viewController else { return }
+        viewController.setPhotoManager(photoManager: PhotoManager())
+        viewControllers.append(viewController)
     }
     
 }
