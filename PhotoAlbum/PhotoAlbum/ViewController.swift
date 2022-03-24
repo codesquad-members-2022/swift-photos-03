@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Photos
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -14,10 +16,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkLibraryPermission()
+        
         collectionView.delegate = collectionViewDelegate
         collectionView.dataSource = collectionViewDelegate
     }
-
-
+    
+    private func checkLibraryPermission(){
+        let photoLibraryPermission = PhotoLibraryPermission(permissionDelegate: self)
+        photoLibraryPermission.checkPermission()
+    }
+    
 }
 
+extension ViewController: PhotoLibraryPermissionDelegate{
+    func accept() {
+        collectionView.reloadData()
+    }
+    
+    func failed() {
+        print("permission failed")
+    }
+}
