@@ -27,7 +27,7 @@ struct PhotoLibraryPermission{
         case .restricted:
             requestAuth()
         case .denied:
-            // 권한 거절
+            permissionDelegate.failed()
             break
         case .authorized:
             permissionDelegate.accept()
