@@ -11,6 +11,7 @@ import UIKit
 class ImageViewCell: UICollectionViewCell{
     
     @IBOutlet weak var imageView: UIImageView!
+    
     static let cellId = "imageViewCell"
     override init(frame: CGRect){
         super.init(frame: frame)
