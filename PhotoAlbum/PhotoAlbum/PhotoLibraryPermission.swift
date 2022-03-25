@@ -9,8 +9,8 @@ import Foundation
 import Photos
 
 protocol PhotoLibraryPermissionDelegate{
-    func accept()
-    func failed()
+    func didAccepPhotoLibraryPermission()
+    func didFailPhotoLibraryPermission()
 }
 
 struct PhotoLibraryPermission{
@@ -27,12 +27,12 @@ struct PhotoLibraryPermission{
         case .restricted:
             requestAuth()
         case .denied:
-            permissionDelegate.failed()
+            permissionDelegate.didFailPhotoLibraryPermission()
             break
         case .authorized:
-            permissionDelegate.accept()
+            permissionDelegate.didAccepPhotoLibraryPermission()
         case .limited:
-            permissionDelegate.accept()
+            permissionDelegate.didAccepPhotoLibraryPermission()
         @unknown default:
             break
         }
@@ -42,11 +42,11 @@ struct PhotoLibraryPermission{
         PHPhotoLibrary.requestAuthorization( { status in
             switch status{
             case .authorized:
-                permissionDelegate.accept()
+                permissionDelegate.didAccepPhotoLibraryPermission()
             case .denied:
-                permissionDelegate.failed()
+                permissionDelegate.didFailPhotoLibraryPermission()
             case .restricted, .notDetermined:
-                permissionDelegate.failed()
+                permissionDelegate.didFailPhotoLibraryPermission()
             default:
                 break
             }

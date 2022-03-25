@@ -77,11 +77,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: PhotoLibraryPermissionDelegate{
-    func accept() {
+    func didAccepPhotoLibraryPermission() {
         photoManager?.getAllImages()
     }
     
-    func failed() {
+    func didFailPhotoLibraryPermission() {
         setAuthAlertAction()
     }
 }
