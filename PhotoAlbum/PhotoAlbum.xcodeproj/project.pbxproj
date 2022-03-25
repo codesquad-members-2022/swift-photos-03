@@ -16,6 +16,7 @@
 		7240385E27E865DE000E29AB /* PhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240385D27E865DE000E29AB /* PhotoAlbumTests.swift */; };
 		7240386827E865DF000E29AB /* PhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240386727E865DF000E29AB /* PhotoAlbumUITests.swift */; };
 		7240386A27E865DF000E29AB /* PhotoAlbumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240386927E865DF000E29AB /* PhotoAlbumUITestsLaunchTests.swift */; };
+		72427E5127EC5987002472E9 /* PhotoImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72427E5027EC5987002472E9 /* PhotoImageModel.swift */; };
 		72481D7027EAC2E100C74107 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72481D6F27EAC2E100C74107 /* PhotoManager.swift */; };
 		7267392427E9A45600D22C5A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267392327E9A45600D22C5A /* NavigationController.swift */; };
 		7267392627E9A79600D22C5A /* PhotoLibraryPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267392527E9A79600D22C5A /* PhotoLibraryPermission.swift */; };
@@ -55,6 +56,7 @@
 		7240386327E865DF000E29AB /* PhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7240386727E865DF000E29AB /* PhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		7240386927E865DF000E29AB /* PhotoAlbumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72427E5027EC5987002472E9 /* PhotoImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImageModel.swift; sourceTree = "<group>"; };
 		72481D6F27EAC2E100C74107 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		7267392327E9A45600D22C5A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		7267392527E9A79600D22C5A /* PhotoLibraryPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPermission.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				7267392527E9A79600D22C5A /* PhotoLibraryPermission.swift */,
 				7267392727E9B3C300D22C5A /* ImageViewCell.swift */,
 				72481D6F27EAC2E100C74107 /* PhotoManager.swift */,
+				72427E5027EC5987002472E9 /* PhotoImageModel.swift */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				7267392427E9A45600D22C5A /* NavigationController.swift in Sources */,
 				7240384727E865DD000E29AB /* AppDelegate.swift in Sources */,
 				72481D7027EAC2E100C74107 /* PhotoManager.swift in Sources */,
+				72427E5127EC5987002472E9 /* PhotoImageModel.swift in Sources */,
 				7267392627E9A79600D22C5A /* PhotoLibraryPermission.swift in Sources */,
 				7267392827E9B3C300D22C5A /* ImageViewCell.swift in Sources */,
 				7305DDF527E970090096A087 /* CollectionViewDelegate.swift in Sources */,

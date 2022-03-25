@@ -9,18 +9,24 @@ import Foundation
 import UIKit
 
 class ImageViewCell: UICollectionViewCell{
-    lazy var imageView = UIImageView()
+    
+    @IBOutlet weak var imageView: UIImageView!
+    static let cellId = "imageViewCell"
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.contentMode = .scaleAspectFill
-        contentView.addSubview(imageView)
     }
     
-    func setImageViewSize(size: CGSize){
-        imageView.frame.size = size
+    func setImage(imageData: Data){
+        imageView.contentMode = .scaleAspectFill
+        guard let image = UIImage(data: imageData) else { return }
+        imageView.image = image
     }
 }
