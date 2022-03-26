@@ -21,6 +21,7 @@
 		7267392427E9A45600D22C5A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267392327E9A45600D22C5A /* NavigationController.swift */; };
 		7267392627E9A79600D22C5A /* PhotoLibraryPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267392527E9A79600D22C5A /* PhotoLibraryPermission.swift */; };
 		7267392827E9B3C300D22C5A /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267392727E9B3C300D22C5A /* ImageViewCell.swift */; };
+		72BB0F1227EF0C7300F1B6A9 /* DocumentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB0F1127EF0C7300F1B6A9 /* DocumentManager.swift */; };
 		7305DDF327E96A9D0096A087 /* ColorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305DDF227E96A9D0096A087 /* ColorFactory.swift */; };
 		7305DDF527E970090096A087 /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305DDF427E970090096A087 /* CollectionViewDelegate.swift */; };
 		736B92C427ED54B8003C416D /* Doodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736B92C327ED54B8003C416D /* Doodle.swift */; };
@@ -66,6 +67,7 @@
 		7267392327E9A45600D22C5A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		7267392527E9A79600D22C5A /* PhotoLibraryPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPermission.swift; sourceTree = "<group>"; };
 		7267392727E9B3C300D22C5A /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		72BB0F1127EF0C7300F1B6A9 /* DocumentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentManager.swift; sourceTree = "<group>"; };
 		7305DDF227E96A9D0096A087 /* ColorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFactory.swift; sourceTree = "<group>"; };
 		7305DDF427E970090096A087 /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 		736B92C327ED54B8003C416D /* Doodle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doodle.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				7305DDF227E96A9D0096A087 /* ColorFactory.swift */,
 				72481D6F27EAC2E100C74107 /* PhotoManager.swift */,
 				736B92D027ED8CA6003C416D /* DoodleNetworkModel.swift */,
+				72BB0F1127EF0C7300F1B6A9 /* DocumentManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				7267392627E9A79600D22C5A /* PhotoLibraryPermission.swift in Sources */,
 				7267392827E9B3C300D22C5A /* ImageViewCell.swift in Sources */,
 				736B92C627ED5887003C416D /* DoodleViewController.swift in Sources */,
+				72BB0F1227EF0C7300F1B6A9 /* DocumentManager.swift in Sources */,
 				7305DDF527E970090096A087 /* CollectionViewDelegate.swift in Sources */,
 				7305DDF327E96A9D0096A087 /* ColorFactory.swift in Sources */,
 				7240384927E865DD000E29AB /* SceneDelegate.swift in Sources */,

@@ -11,6 +11,7 @@ class DoodleViewController: UIViewController {
 
     @IBOutlet weak var doodleCollectionView: UICollectionView!
     private let doodleViewDelegate = DoodleViewDelegate()
+    private let documentManager = DocumentManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
