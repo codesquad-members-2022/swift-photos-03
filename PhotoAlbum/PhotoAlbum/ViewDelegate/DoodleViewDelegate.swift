@@ -43,7 +43,6 @@ extension DoodleViewDelegate: UICollectionViewDataSource, UICollectionViewDelega
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DoodleCell.cellId, for: indexPath) as? DoodleCell else {
             return UICollectionViewCell()
         }
-        
         cell.setImage(imageData: self.doodleImages[indexPath.item])
         return cell
     }
