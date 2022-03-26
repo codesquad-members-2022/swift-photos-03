@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationUI()
         
         NotificationCenter.default.addObserver(self, selector: #selector(setPhotoToCollectionView), name: PhotoManager.Notification.Event.getPhotoData, object: photoManager)
         NotificationCenter.default.addObserver(self, selector: #selector(deletedPhotoToCollectionView), name: PhotoManager.Notification.Event.deletedPhotosFromLibrary, object: photoManager)
@@ -23,7 +24,25 @@ class ViewController: UIViewController {
         collectionView.delegate = collectionViewDelegate
         collectionView.dataSource = collectionViewDelegate
         checkLibraryPermission()
+
     }
+    
+    func setNavigationUI() {
+        self.navigationItem.title = "Photos"
+        let addBarItem = UIBarButtonItem(image: nil, style: UIBarButtonItem.Style.plain, target: self, action: #selector(presentDoodle))
+        
+        self.navigationItem.rightBarButtonItem = addBarItem
+        addBarItem.title = "➕"
+        addBarItem.tintColor = .black
+    }
+    
+    @objc func presentDoodle(_ sender: Any) {
+        guard let doodleViewController = storyboard?.instantiateViewController(withIdentifier: "DoodleViewController") as? DoodleViewController
+        else { return }
+        
+        self.navigationController?.pushViewController(doodleViewController, animated: true)
+    }
+    
     
     func setPhotoManager(photoManager: PhotoManagable){
         self.photoManager = photoManager

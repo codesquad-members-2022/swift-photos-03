@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sL-aj-5Vz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sL-aj-5Vz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="djd-jg-a7h">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ztx-BC-CQA">
                                     <size key="itemSize" width="125" height="120"/>
@@ -68,7 +68,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="djd-jg-a7h" secondAttribute="bottom" id="l0R-Hu-hZu"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZZG-Pg-XWr"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="djd-jg-a7h" id="8Ij-v7-mg2"/>
                     </connections>
@@ -76,6 +78,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Doodle View Controller-->
+        <scene sceneID="guB-Vh-OR3">
+            <objects>
+                <viewController storyboardIdentifier="DoodleViewController" id="ag7-fX-7Re" customClass="DoodleViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c08-pj-Rme">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G9b-S1-gyF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wvy-H5-v2b">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DoodleCell" reuseIdentifier="DoodleCell" id="aXV-2t-9oi" customClass="DoodleCell" customModule="PhotoAlbum" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LBS-Gq-zEK">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-R8-v6x">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="110" id="3BG-af-hkY"/>
+                                                        <constraint firstAttribute="height" constant="50" id="iXb-vn-xSM"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="jNg-R8-v6x" secondAttribute="bottom" id="Ifq-qn-rkP"/>
+                                                <constraint firstItem="jNg-R8-v6x" firstAttribute="top" secondItem="LBS-Gq-zEK" secondAttribute="top" id="WZS-BW-FDy"/>
+                                                <constraint firstAttribute="trailing" secondItem="jNg-R8-v6x" secondAttribute="trailing" id="kmW-PC-LwA"/>
+                                                <constraint firstItem="jNg-R8-v6x" firstAttribute="leading" secondItem="LBS-Gq-zEK" secondAttribute="leading" id="rGv-xY-jKV"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="jNg-R8-v6x" id="h1S-cp-GTE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fga-zu-Xjh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G9b-S1-gyF" firstAttribute="top" secondItem="fga-zu-Xjh" secondAttribute="top" id="Cbh-0u-Pn7"/>
+                            <constraint firstItem="fga-zu-Xjh" firstAttribute="trailing" secondItem="G9b-S1-gyF" secondAttribute="trailing" id="WyI-X6-ksD"/>
+                            <constraint firstItem="fga-zu-Xjh" firstAttribute="bottom" secondItem="G9b-S1-gyF" secondAttribute="bottom" id="eBJ-g8-FaT"/>
+                            <constraint firstItem="G9b-S1-gyF" firstAttribute="leading" secondItem="fga-zu-Xjh" secondAttribute="leading" id="sD1-JU-XSv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doodleCollectionView" destination="G9b-S1-gyF" id="jiq-WE-e0M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwx-9s-mrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bqh-Mg-dZr">
